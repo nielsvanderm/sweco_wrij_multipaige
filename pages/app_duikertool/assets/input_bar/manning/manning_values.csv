@@ -1,0 +1,8 @@
+﻿;Km-waarden in m1/3 s-1 voor beton;Minimum;Normaal;Maximum
+1;Duiker, recht en schoon;75;90;100
+2;Duiker met bochten, verbindingen en enige verontreiniging ;70;75;90
+3;Afgewerkt;70;85;90
+4;Rioolbuis met mangaten, inlaten e.d. recht;55;65;75
+5;Niet afgewerkt, bij stalen bekisting ;70;75;85
+6;Niet afgewerkt, bij gladde houten bekisting;60;70;85
+7;Niet afgewerkt, bij ruwe houten bekisting ;50;60;65
