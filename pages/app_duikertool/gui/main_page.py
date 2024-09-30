@@ -103,32 +103,7 @@ def main_page():
             markdown_regular(f"Hydrailische straal: {round(result['hydraulic_radius'],3)} [m]")
 
             markdown_header('Weerstand')
-            markdown_regular(f"Weerstand totaal: {round(result['loss_coefficient'],3)} [????]")
-            markdown_regular(f"Weerstand op basis van Manning: {round(result['roughness_coefficient'],3)} [????]")
-            markdown_regular(f"Wrijvingsverlies: {round(result['friction_loss'],3)} [????]")
-            markdown_regular(f"Uitreeverlies: {round(result['exit_loss'],3)} [????]")
-
-
-        # Definieer de vereiste standaardwaarden voor de ontbrekende velden
-        # default_values = {
-        #     'gronddekking': 0.2,
-        #     'h_uitstroom': 0.1,
-        #     'duiker_verval': 0.5
-        # }
-
-        # Vul de session_state met de standaardwaarden als die ontbreken
-        # for key, value in default_values.items():
-        #     if key not in st.session_state['input']:
-        #         st.session_state['input'][key] = value
-        # print(f"culvert type = {type(culvert)}")
-        # print(f"culvert type = {culvert}")
-        # cc.CulvertCalculator(**st.session_state['input'])
-        # Vervolgens roep je PlotDuiker aan
-        # plot = vis.PlotDuiker(**st.session_state['input'])
-        # st.plotly_chart(plot.plot_zijaanzicht(), use_container_width=False)
-        # st.plotly_chart(plot.plot_vooraanzicht(), use_container_width=False)
-
-        # st.plotly_chart(plot.plot_zijaanzicht())
-
-
-    #..... Hier de rest van de app
+            markdown_regular(f"Weerstand totaal: {round(result['loss_coefficient'],3)} [m(1/3)/s]")
+            markdown_regular(f"Weerstand op basis van Manning: {round(result['roughness_coefficient'],3)} [m(1/3)/s]")
+            markdown_regular(f"Wrijvingsverlies: {round(result['friction_loss'],3)} [m(1/3)/s]")
+            markdown_regular(f"Uitreeverlies: {round(result['exit_loss'],3)} [m(1/3)/s]")
